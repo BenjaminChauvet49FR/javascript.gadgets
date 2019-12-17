@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Hommage MDP Chip</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<h1>Un peu d'histoire</h1>
+<p>
+Quand j'étais petit, j'étais un passionné du jeu Chip's Challenge. A l'époque (2002-2003) il y avait, du moins à ma connaissance, seulement les 149 niveaux du pack de base.</br>
+Lorsque je me suis remis à ce jeu des années plus tard (2010-2011) j'ai appris l'existence d'un éditeur de niveaux, ce dont j'avais rêvé étant gosse. Ainsi, le nombre de niveaux peut potentiellement exploser grâce à l'imagination des internautes qui daignent le publier. En outre, un deuxième pack "officiel" (du point de vue d'une communauté, pas de l'auteur du jeu) de 149 niveaux est sorti, nommé simplement "Chip's Challenge level Pack 2". Puis par la suite un CCLP3. 
+</p>
+
+<h1>Principe</h1>
+<p>
+Mais pour rester dans la simplicité, et pour rendre hommage à cette douce période, nous allons revenir aux fondamentaux avec le pack original de 149 niveaux.
+Je vais m'en prendre aux 149 mots de passe qui, étrangement, me fascinaient. Ce sont des petits ensembles de 4 lettres, généralement non-intelligibles. Il y a évidemment 456976 combinaisons possibles (26^4), mais seules 148 ont été retenues dans ce jeu en tant que les mots de passe des niveaux (dont une "compte double" : BIFQ, mdp des niveaux 95 et 96, car je jouais avec la version Microsoft). </br>
+</p>
+
+<h2>Occurences</h2>
+<table id="occurencesTable"></table>
+
+<h2>Occurences croisées</h2>
+<table id="occurencesCroiseesTable"></table>
+
+<h2>Occurences tricroisées</h2>
+<form id="occurencesTricroiseesForm">
+Valeurs minimales : <input id="occurencesTricroiseesMinInput" value="1"></input></br>
+Avec la/les lettre(s) : <input id="occurencesTricroiseesLettresInput" value=""></input></br>
+<input id="occurencesTricroiseesSubmit" type="submit" value="Afficher"></input>
+<input id="occurencesTricroiseesReset" type="submit" value="Réinitaliser"></input> </br>
+</form>
+<table id="occurencesTricroiseesTable"></table>
+
+<script type="text/javascript" src="compterMDP.js"></script>
+</body>
+</html>
+

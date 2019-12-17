@@ -1,0 +1,31 @@
+ body {
+	background-image: url("../nuages.jpg");
+}
+
+table{
+	border-collapse : collapse;
+}
+
+#occurencesTable td, #occurencesCroiseesTable td, #occurencesTricroiseesTable td{
+	background-color : #ffffff;
+	border: 1px solid black;
+}
+
+#occurencesTable thead td, #occurencesTable thead td:first-child{background-color : #ffc000;}
+#occurencesTable td:first-child{background-color : #ffff00;}
+
+#occurencesCroiseesTable td{
+	width:50px;
+}
+#occurencesCroiseesTable td:first-child, #occurencesCroiseesTable thead td{
+	padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 8px;
+}
+#occurencesCroiseesTable td{text-align: center;}
+#occurencesCroiseesTable td:first-child, #occurencesCroiseesTable thead td{background-color : #ffff00;}
+#occurencesCroiseesTable thead td:first-child{background-color : #ffc000;}
+
+#occurencesTricroiseesTable td{text-align: center; width:32px;}
+#occurencesTricroiseesTable td:first-child{background-color : #ffff00;}
+

@@ -1,0 +1,40 @@
+Elements de Chip listables :
+
+Non listés : 
+Personnage, case vide, exit
+
+Classiques : 
+Chip, mur, aide
+
+Anti-ennemis :
+Gravier, dirt, voleurs, murs bloquants
+
+Murs mystères : 
+Mur bleu vrai, mur bleu faux, mur invisible, mur apparissant
+Mur bleu
+
+Sols et équipement :
+Feu, eau, glace, flèches, flèches aléatoires
+Glace générale
+Bottes feu, palmes, patins, ventouses
+Les 4 chaussures 
+
+Clés et portes
+Clé rouge, porte rouge, clé jaune, porte jaune, clé verte, porte verte , clé bleue, porte bleue
+Clé verte simple (qui n'a pas d'impact à être utilisée plusieurs fois)
+Clé verte multiple (qui a un impact à être utilisée plusieurs fois)
+
+Boutons : 
+Boutons verts, portes alternées
+Boutons bleus, tanks
+Boutons marrons, trappes
+Boutons rouges, cloneurs
+
+Ennemis :
+Boule rose, insecte, paramécie, boule de feu, glider, marcheur, blob, dents
+Tout ennemi plus tank
+Insecte ou paramécie
+Boule de feu ou glider
+
+Divers : 
+Bombe, bloc, téléporteur, mur fin

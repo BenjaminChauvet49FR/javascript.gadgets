@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Permutations !</title>
+</head>
+
+<body>
+Afficher la console debug pour les permutations.
+<script type="text/javascript" src="permut.js"></script>
+</body>
+</html>
+
+1 5 9 6 7 - 3 10 4 2 8 => 1 9
+9 2 1 4 3 - 7 8 5 10 6 => 8 2
+10 5 7 6 3 - 2 9 4 1 8 => 10
+6 10 1 8 4 - 9 3 2 5 7 => 10
+2 1 9 4 5 - 6 8 10 7 3 => 1 1 1 2 5
+7 3 8 1 4 - 2 5 10 6 9 => 4 6
+8 6 9 4 1 - 3 7 5 2 10 => 3 4 1 1 1
+7 8 9 1 5 - 10 3 2 6 4 => 7 2 1
+
+
+
+-----
+Les secrets de Fort Boyard (1993-1995 et 1998-2009. Yup. Fort-ever) :
+Diffusion\Tournages : 
+1 : 3-3-5-0-3-1-0-0-0-0
+2 : 2-1-4-3-1-3-1-0-0-0
+3 : 5-2-1-0-2-0-0-3-2-0
+4 : 1-2-0-1-2-2-1-1-4-1
+5 : 0-0-1-1-1-2-3-2-3-2
+6 : 1-1-0-4-2-3-2-0-1-1
+7 : 2-1-1-1-3-0-3-1-1-2
+8 : 0-4-1-2-0-1-1-3-2-1
+9 : 1-1-2-3-1-0-2-3-1-1
+10: 0-0-0-0-0-3-2-2-1-7 
+
+Modes de dif par tournage : 
+3-8-1-6-(1,7)-(2,6,10)-(5,7)-(3,8,9)-4-10
+Typique (tourner les émissions en se référant aux ordres de diffusion) : 3-8-1-6-7-2-5-9-4-10
+(et donc diffuser les émissions dans l'ordre suivant des tournages) : 
+3-6-1-9-7-4-5-2-8-10 (orbites : 2,2,1,5)
+
+Modes de tournage par dif : 
+3-3-1-9-(7,9)-4-(5,7)-2-(4,8)-10
+Typique (diffuser les émissions en se référant à l'ordre de tournage) : 
+3-6-1-9-7-4-5-2-8-10 (il fallait départager le 3 pour le 1 et le 2 en fonction de ce qui restait. Cool, on retombe sur ci-dessus)
+
+(exemplaires pour mode :)
+5-3-5-4-3-4-3-4-3-7
+
+
+Pts communs/saison réelle avec la saison typique :
+1993 : 2 (1/3 et 3/1)
+1994 : 5 (1/3, 2/6, 3/1, 5/7, 10/10)
+1995 : 0
+1998 : 2 (7/5, 10/10)
+1999 : 0 
+2000 : 2 (1/3, 7/5)
+2001 : 4 (3/1, 8/2, 9/8, 10/10)
+2002 : 3 (5/7, 6/4, 10/10)
+2003 : 4 (4/9, 6/4, 8/2, 9/8)
+2004 : 6 (1/3, 3/1, 4/9, 7/5, 8/2, 10/10)
+2005 : 4 (2/6, 3/1, 6/4, 10/10)
+2006 : 5 (2/6, 6/4, 8/2, 9/8, 10/10)
+2007 : 0
+2008 : 3 (1/3, 3/1, 4/9)
+2009 : 2 (5/7, 4/9)
