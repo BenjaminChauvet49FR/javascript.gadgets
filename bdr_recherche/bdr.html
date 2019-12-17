@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Biquadratiques de racine</title>
+		<!--link rel="stylesheet" type="text/css" href="style.css"-->
+    </head>
+    <body>
+		Nombre à découper : <input type="number" id="input_nombreADecouper" class="input_numerique"></input></br>
+		Nombre découpeur : <input type="number" id="input_nombreDecoupeur" class="input_numerique"></input></br>
+		<span id="span_clic">Cliquer ici</span></br>
+		Décompositions : </br>
+		<ul id="div_decompositions"></ul>
+		<script>
+			var spanClic = document.getElementById("span_clic");	
+			var inputNombreADecouper = document.getElementById("input_nombreADecouper");	
+			var inputNombreDecoupeur = document.getElementById("input_nombreDecoupeur");	
+			var divDecompositions = document.getElementById("div_decompositions");
+			
+			spanClic.addEventListener("click",function(e){
+				var nbDecoupeur = parseInt(inputNombreDecoupeur.value);
+				var nbADecouper = parseInt(inputNombreADecouper.value);
+				var presumeCarre;
+				divDecompositions.innerHTML = "";
+				var noeudLi;
+				console.log(Math.sqrt(nbADecouper));
+				for(var i=0;i<Math.sqrt(nbADecouper);i++){
+					presumeCarre =  Math.sqrt(nbADecouper-nbDecoupeur*i*i);
+					if (presumeCarre == Math.floor(presumeCarre) && pgcd(i,presumeCarre) == 1){
+						noeudLi = document.createElement("li");
+						noeudLi.innerHTML = "s"+i+" "+presumeCarre;
+						divDecompositions.appendChild(noeudLi);//document.createTextNode();*/
+					}					
+				}
+			});
+			
+			function pgcd(a,b){
+				if (a<0)
+					return pgcd(-a,b);
+				if (b<0)
+					return pgcd(a,b);
+				if (a<b)
+					return pgcd(b,a);
+				if (b==0)
+					return a;
+				return pgcd(b,a%b);
+			}
+		</script>
+		
+	
+	</body>
+<html>
